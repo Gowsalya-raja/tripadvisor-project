@@ -1,0 +1,429 @@
+/* ========================= Global Styles ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gabarito', sans-serif;
+}
+
+/* ========================= Navbar ========================= */
+.navbar {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar__S1__title {
+    color: darkgreen;
+    font-size: 30px;
+}
+
+/* Navbar Menu */
+.navbar__S2 {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.navbar__S2 p {
+    cursor: pointer;
+}
+
+/* Login */
+.navbar__S3 {
+    background-color: darkgreen;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ========================= Hero Section ========================= */
+.sale-image {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Image */
+.image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark Overlay */
+.sale-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Main Heading */
+.sale-image h2 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-size: 42px;
+    color: black;
+}
+
+/* Green Heading */
+.sale-image h3 {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    font-size: 42px;
+    color: darkgreen;
+}
+
+/* Description */
+.sale-image p {
+    position: absolute;
+    top: 210px;
+    left: 80px;
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* ========================= Search Bar ========================= */
+.searchbar__S2 {
+    position: absolute;
+    top: 310px;
+    left: 80px;
+    width: 45%;
+    height: 70px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 35px;
+}
+
+/* Search Icon */
+.searchbar__S2 i {
+    font-size: 18px;
+    color: black;
+    padding-left: 5px;
+}
+
+/* Search Text Input */
+.searchbar__S2 input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Gabarito', sans-serif;
+    background: transparent;
+}
+
+/* Search Button */
+.search-btn {
+    width: 90px;
+    min-width: 90px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00e676;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Search Button Hover */
+.search-btn:hover {
+    background-color: #00c853;
+}
+
+.featured{
+    padding: 10px;
+    top: 20px;
+    padding-left: 70px;
+    margin-bottom: 50px;
+}
+
+.featured__container{
+display: flex;
+flex-wrap: wrap;
+gap: 50px;
+margin-top: 20px;
+}
+
+.featured__title{
+    margin-top: 30px;
+   margin-bottom: 10px ;
+   color: darkgreen;
+
+}
+.popular__title{
+     margin-bottom: 10px; 
+     margin-top: 50px;
+     color: darkgreen;
+}
+
+.featured p{
+    color: gray;
+
+}
+
+.place-card{
+   width: 20%;
+   border: solid 1px #ddd;
+   border-radius: 10px;
+   
+    }
+
+.place-card img{
+    width: 100%;
+    height: 180px;
+    
+}
+
+.place-card h4{
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.place-card p{
+    margin-top: 10px;
+ margin-left: 12px;
+ margin-bottom: 10px;
+}
+
+
+.advertisement {
+    background-color: #00e054;
+    margin: 40px 70px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    border-radius: 10px;
+}
+
+.advertisement__image {
+    width: 50%;
+}
+
+.advertisement__image img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.advertisement__content {
+    width: 50%;
+    text-align: center;
+}
+
+.advertisement__content h1 {
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.advertisement__content p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.advertisement__content button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    background-color: #006b5b;
+    color: white;
+    padding: 40px 70px;
+    margin-top: 50px;
+}
+
+.footer__one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__one p {
+    margin-top: 12px;
+}
+
+.footer__one h3 {
+    margin-bottom: 15px;
+}
+
+.footer__one__s1 {
+    width: 30%;
+}
+
+.footer__one__s1 h2 {
+    margin-bottom: 15px;
+}
+
+.footer__two {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+
+/* Mobile Menu Icon */
+
+.menu-icon {
+    display: none;
+   
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar__S1__title {
+        font-size: 24px;
+    }
+
+    /* Hide desktop menu */
+
+    .navbar__S2 {
+        display: none;
+    }
+
+    /* Login */
+
+    .navbar__S3 {
+        display: none;
+    }
+
+    /* Show hamburger */
+
+
+    .menu-icon {
+    display: block;
+    font-size: 25px;
+    color: darkgreen;
+}
+
+
+    /* Hero */
+
+    .sale-image {
+        height: 450px;
+    }
+
+    .sale-image h2 {
+        top: 50px;
+        left: 25px;
+        font-size: 30px;
+    }
+
+    .sale-image h3 {
+        top: 90px;
+        left: 25px;
+        font-size: 30px;
+    }
+
+    .sale-image p {
+        top: 145px;
+        left: 25px;
+        font-size: 17px;
+    }
+
+
+    /* Search */
+
+    .searchbar__S2 {
+        top: 250px;
+        left: 20px;
+        width: 90%;
+    }
+
+
+    /* Cards */
+
+    .featured {
+        padding: 20px;
+    }
+
+    .place-card {
+        width: 100%;
+    }
+
+    .featured__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* Advertisement */
+
+    .advertisement {
+        margin: 30px 20px;
+        display: block;
+    }
+
+    .advertisement__image,
+    .advertisement__content {
+        width: 100%;
+    }
+
+    .advertisement__image img {
+        width: 100%;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer__one {
+        display: block;
+    }
+
+    .footer__one__s1 {
+        width: 100%;
+    }
+
+}
